@@ -4,6 +4,7 @@ ports:
  - port: 9444
 
 tasks:
+ - init: sudo docker-up
  - init: mvn clean install -f fhir-examples -DskipTests
  - init: mvn clean install -f fhir-parent -DskipTests
    command: docker build fhir-install
