@@ -1,7 +1,7 @@
 image: gitpod/workspace-full
 
 ports: 
- - port: 9444
+ - port: 94443
 
 tasks:
  - init: sudo docker-up
