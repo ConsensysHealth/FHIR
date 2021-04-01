@@ -1,6 +1,10 @@
-#image: gitpod/workspace-full
+image: gitpod/workspace-full
 
-#ports:
+ports: 
+ - port: 9444
 
-#tasks:
+tasks:
+ - init: mvn clean install -f fhir-examples -DskipTests
+ - init: mvn clean install -f fhir-parent -DskipTests
+   command: docker build fhir-install
  
