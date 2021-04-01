@@ -167,7 +167,7 @@ public interface FHIRPersistence {
     int reindex(FHIRPersistenceContext context, OperationOutcome.Builder operationOutcomeResult, Instant tstamp, String resourceLogicalId)
             throws FHIRPersistenceException;
 
-    /**
+    /**fhirServer/core/serverRegistryResourceProviderEnabled
      * Special function for high speed export of resource payloads. The process
      * function must process the InputStream before returning. Result processing
      * will be stopped if the process function returns Boolean FALSE.

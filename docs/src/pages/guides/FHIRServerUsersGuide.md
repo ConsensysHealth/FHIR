@@ -2069,7 +2069,7 @@ This section contains reference information about each of the configuration prop
 |`fhirServer/core/defaultHandling`|strict|
 |`fhirServer/core/allowClientHandlingPref`|true|
 |`fhirServer/core/checkReferenceTypes`|true|
-|`fhirServer/core/serverRegistryResourceProviderEnabled`|false|
+|`fhirServer/core/serverRegistryResourceProviderEnabled`|true|
 |`fhirServer/core/conditionalDeleteMaxNumber`|10|
 |`fhirServer/core/capabilityStatementCacheTimeout`|60|
 |`fhirServer/core/extendedCodeableConceptValidation`|true|
