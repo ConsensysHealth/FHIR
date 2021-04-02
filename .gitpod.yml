@@ -1,0 +1,11 @@
+image: gitpod/workspace-full
+
+ports: 
+ - port: 9443
+
+tasks:
+ - init: sudo docker-up
+ - init: mvn clean install -f fhir-examples -DskipTests
+ - init: mvn clean install -f fhir-parent -DskipTests
+   command: docker build fhir-install -t ch/fhir && docker-compose up
+ 
