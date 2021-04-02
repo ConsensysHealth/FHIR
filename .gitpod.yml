@@ -7,5 +7,5 @@ tasks:
  - init: sudo docker-up
  - init: mvn clean install -f fhir-examples -DskipTests
  - init: mvn clean install -f fhir-parent -DskipTests
-   command: docker build fhir-install -t ch:fhir && docker run -p9443:9443 -e BOOTSTRAP_DB=true ch:fhir -d
+   command: docker build fhir-install -t ch/fhir && docker-compose up
  
