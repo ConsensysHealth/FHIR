@@ -3,9 +3,9 @@ services:
   fhir:
     image: ch/fhir
     environment:
-      BOOTSTRAP_DB=true
+      BOOTSTRAP_DB: "true"
     ports:
-      - "9443":"9443"
+      - 9443:9443
     healthcheck:
       test: ["CMD", "curl", "-i", "-v", "-k", "-u", "fhiruser:change-password", "https://localhost:9443/fhir-server/api/v4/$healthcheck"]
       interval: 10s
