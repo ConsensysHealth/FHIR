@@ -178,7 +178,7 @@ public class FHIRServletContextListener implements ServletContextListener {
             log.fine("Initializing FHIRRegistry...");
             FHIRRegistry.getInstance();
 
-            Boolean serverRegistryResourceProviderEnabled = fhirConfig.getBooleanProperty(PROPERTY_SERVER_REGISTRY_RESOURCE_PROVIDER_ENABLED, Boolean.FALSE);
+            Boolean serverRegistryResourceProviderEnabled = fhirConfig.getBooleanProperty(PROPERTY_SERVER_REGISTRY_RESOURCE_PROVIDER_ENABLED, Boolean.TRUE);
             if (serverRegistryResourceProviderEnabled) {
                 log.info("Registering ServerRegistryResourceProvider...");
                 ServerRegistryResourceProvider provider = new ServerRegistryResourceProvider(persistenceHelper);
