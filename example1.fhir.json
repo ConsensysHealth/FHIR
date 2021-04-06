@@ -1,0 +1,120 @@
+{ 
+  "resourceType": "Patient",
+  "id": "0082d6875a8-50421016-65f2-4852-916b-06236211bXXX",
+  "meta" : {
+    "versionId": "1", 
+    "lastUpdated": "2021-03-13T21:05:23.88Z", 
+    "extension" : [
+    {
+    "url": "http://healthutilitynetwork.com/fhir/extension/v1/contentHash",
+    "valueString": "0xd5cafa4b7dc4624812b44afe805064254444a58ef6375116de51b50feef0dfc9"
+    },
+    {
+    "url": "http://healthutilitynetwork.com/fhir/extension/v1/transactionHash",
+    "valueString": "0x27945e0558bc894218b6f3a459c70ea0d091a00d46a42ea95ca8ce0691a6443e"
+    }, 
+    {
+    "url": "http://healthutilitynetwork.com/fhir/extension/v1/assetInstanceID",
+    "valueString": "7d7979c6-6f96-443a-83ea-1f5e30dacc4a"
+    }, 
+    { 
+    "url": "http://healthutilitynetwork.com/fhir/extension/v1/author",
+    "valueString": "0x6d043ac3ab5ac218df4797d0085eab76cc6dfc5b"  
+    }, 
+    {
+    "url": "http://healthutilitynetwork.com/fhir/extension/v1/submitted",
+    "valueString": "1615562654"  
+    }, 
+    {
+    "url": "http://healthutilitynetwork.com/fhir/extension/v1/timestamp",
+    "valueString": "1615562657"  
+    }, 
+    {
+    "url": "http://healthutilitynetwork.com/fhir/extension/v1/blockNumber",
+    "valueString": "99545"  
+    }
+  ] 
+ }, 
+"identifier": [{
+  "use": "usual",
+  "value": "29926e49-f284-4605-a1c2-3d6c88f0b0a1",
+  "system": "2.16.840.1.113883.3.XXX", 
+  "assigner": {
+      "display" : "Health Utility Network" 
+  }
+  }, {
+  "use": "usual",
+  "value": "12123139876",
+  "system": "2.16.840.1.113883.3.5580", 
+  "assigner": {
+      "display": "Cleveland Clinic"
+  }}, 
+  {
+    "use": "usual",
+    "value": "12123139876",
+    "system": "2.16.840.1.113883.3.5580", 
+    "assigner": {
+        "display": "Commonwell Network"
+    }}, 
+  {
+  "use": "official",
+  "value": "H12300-2223xxx-9876",
+  "system": "urn:oid:2.16.840.1.113883.4.3.17", 
+  "assigner": {
+      "display" : "Illinois DMV" 
+  }}, {
+  "use": "official",
+  "value": "987-11-2020",
+  "system": "http://hl7.org/fhir/sid/us-ssn", 
+  "assigner": {
+      "display" : "United States Department of Social Security"
+  } }
+  ], 
+  "active": true,
+  "name": [
+    {
+      "use": "official",
+      "family": "Chalmers",
+      "given": [
+        "Peter",
+        "James"
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "(03) 5555 6473",
+      "use": "work"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/us-core-direct",
+          "valueBoolean": true
+        }
+      ],
+      "system": "email",
+      "value": "person@example.org",
+      "use": "work"
+    }
+  ],
+  "address": [
+    {
+      "use": "home",
+      "line": [
+        "534 Erewhon St"
+      ],
+      "city": "PleasantVille",
+      "district": "Orange County",
+      "state": "Vic",
+      "postalCode": "3999"
+    }
+  ], 
+  "extension": [{
+		"url": "http://ibm.com/fhir/extension/Patient/favorite-color",
+		"valueString": "green"
+	}]
+  
+}
+

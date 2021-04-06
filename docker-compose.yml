@@ -1,7 +1,7 @@
 version: "3.7"
 services:
   fhir:
-    image: ch/fhir
+    image: ch/fhir:latest
     environment:
       BOOTSTRAP_DB: "true"
     ports:

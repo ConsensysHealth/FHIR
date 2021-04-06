@@ -8,4 +8,4 @@ tasks:
  - init: mvn clean install -f fhir-examples -DskipTests
  - init: mvn clean install -f fhir-parent -DskipTests
    command: docker build fhir-install -t ch/fhir && docker-compose up
- 
+
